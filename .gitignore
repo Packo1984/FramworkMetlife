@@ -1,0 +1,38 @@
+# Compiled Source #
+###################
+*.class
+
+# Executables #
+###############
+*.exe
+
+# Packaged Files #
+##################
+*.jar
+
+# Pictures & Reports #
+######################
+*.html
+*.jpg
+*.png
+*.gif
+
+# Target & Reports Folders #
+###########################
+/target/
+/reports/
+/test-output/
+
+# Unnecessary Pom file #
+########################
+dependency-reduced-pom.xml
+
+# Visual Studio Project Files #
+###############################
+.classpath
+.settings
+certfile.cer
+delivery.ps1
+delivery.py
+delivery.sh
+embeddingScreenshots.txt

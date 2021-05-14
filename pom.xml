@@ -1,0 +1,362 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>QE-General-Framework</groupId>
+	<artifactId>QE-General-Framework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+
+
+		<!-- ChromeDriver.exe: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>chromedriver</artifactId>
+			<version>87.0.4280.20</version>
+			<type>exe</type>
+			<scope>provided</scope>
+		</dependency>
+		
+		
+		<!-- EdgeLegacy.exe: -->
+		
+	     <dependency>  	
+		 <groupId>com.metlife.qas</groupId> 
+		 <artifactId>MicrosoftWebDriver</artifactId>  	
+		 <version>LATEST</version> 	
+		  <type>exe</type> 
+		 <scope>provided</scope>  	
+		 </dependency> 
+		
+		
+		<!-- Edge.exe: -->
+		
+		<dependency>  	
+		  <groupId>com.metlife.qas</groupId>
+		 <artifactId>msedgedriver</artifactId> 
+		 <version>LATEST</version> 
+		 <type>exe</type>
+		 <scope>provided</scope> 	
+		 </dependency> 
+		
+		
+		
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>7.4.1.jre8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
+		<!-- Dom4j-1.6.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6</version>
+		</dependency>
+
+		<!-- ExtentReports-2.41.2.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<!-- GeckoDriver.exe: -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.metlife.qas</groupId> -->
+<!-- 			<artifactId>geckodriver</artifactId> -->
+<!-- 			<version>LATEST</version> -->
+<!-- 			<type>exe</type> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+
+<!-- 		IEDriverServer.exe: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>IEDriverServer</artifactId>
+			<version>LATEST</version>
+			<type>exe</type>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- operadriver.exe: -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.metlife.qas</groupId> -->
+<!-- 			<artifactId>operadriver</artifactId> -->
+<!-- 			<version>LATEST</version> -->
+<!-- 			<type>exe</type> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+
+		<!-- poi-ooxml-schemas-3.14.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.14</version>
+		</dependency>
+
+		<!-- poi-ooxml-3.14.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.14</version>
+		</dependency>
+
+		<!-- poi-3.14.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.14</version>
+		</dependency>
+
+		<!-- selenium-server-3.7.1.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+
+		<!-- testng-6.10.jar: -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
+		</dependency>
+
+		<!-- xml-apis-1.4.01.jar: -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+
+		<!-- xmlbeans-2.6.0.jar -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+
+
+		<!-- cucumber-core 3.0.2 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!-- cucumber-html 0.2.7 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-html</artifactId>
+			<version>0.2.7</version>
+		</dependency>
+
+		<!-- cucumber-java 3.0.2 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!-- cucumber-junit 3.0.2 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!-- cucumber-jvm-deps 1.0.6 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+
+		<!-- cucumber-reporting 4.4.0 jar -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+
+		<!-- hamcrest-core 2.1 jar -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<!-- gherkin 5.1.0 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+
+		<!-- junit 4.12 jar -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+		<!-- cucumber-testng 3.0.2 jar -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!-- cucumber-extentsreport 3.0.2 jar -->
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>com.metlife.qas</groupId>
+			<artifactId>java-client</artifactId>
+			<version>6.0.0-BETA3</version>
+		</dependency>
+
+	</dependencies>
+
+	<profiles>
+	<profile>
+			<id>execute-tests</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.14.1</version>
+						<configuration>
+							<!-- Suite testng xml file to consider for test execution -->
+							<suiteXmlFiles>
+								<suiteXmlFile>testngweb.xml</suiteXmlFile>
+							</suiteXmlFiles>
+<!-- 							<parallel>classes</parallel> -->
+<!--         					<threadCount>6</threadCount> -->
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<profile>
+			<id>create-jar</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>copy-dependencies</goal>
+								</goals>
+								<configuration>
+									<!-- Directory where the dependencies will be copied to -->
+									<outputDirectory>dependencies</outputDirectory>
+									<excludeTransitive>true</excludeTransitive>
+									<type>exe</type>
+								</configuration>
+							</execution>
+						</executions><!--$NO-MVN-MAN-VER$ -->
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-shade-plugin</artifactId>
+						<version>2.3</version>
+						<executions>
+							<!-- Run shade goal on package phase -->
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>shade</goal>
+								</goals>
+								<configuration>
+									<transformers>
+										<!-- add Main-Class to manifest file -->
+										<transformer
+											implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+											<mainClass>main.java.com.runner.JarEntryPoint</mainClass>
+										</transformer>
+										<transformer
+											implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+											<resource>testng.xml</resource>
+											<file>testng.xml</file>
+										</transformer>
+										<transformer
+											implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+											<resource>data\Test_Data.xlsx</resource>
+											<file>data\Test_Data.xlsx</file>
+										</transformer>
+										<transformer
+											implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+											<resource>dependencies\chromedriver-87.0.4280.20.exe</resource>
+											<file>dependencies\chromedriver-87.0.4280.20.exe</file>
+										</transformer>
+									</transformers>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<!-- Directory where the dependencies will be copied to -->
+							<outputDirectory>dependencies</outputDirectory>
+							<excludeTransitive>true</excludeTransitive>
+							<type>exe</type>
+						</configuration>
+					</execution>
+				</executions><!--$NO-MVN-MAN-VER$ -->
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

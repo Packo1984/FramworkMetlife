@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests" >
+	<test name="chwebbrowser" >
+	
+	<!-- testType = desktopBrowser or Bamboo
+	     browserName = ch,ff,ie,ed,op 
+	 -->
+        <parameter name="testType" value="desktopBrowser" /> 
+		<parameter name="browserName" value="ch" />
+		<parameter name="appUrl" value="https://intcon.dma.metlife.com/adm/" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.DMASmokeSimpleLoginParallel" /> 		
+		</classes>
+	</test>
+	
+  	<test name="chwebbrowser2" >
+        <parameter name="testType" value="desktopBrowser" />
+		<parameter name="browserName" value="ch" />
+		<parameter name="appUrl" value="https://intcon.dma.metlife.com/adm/" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.DMARegressionVerifyRequiredCodeParallel" /> 		
+		</classes>
+	</test> 
+	
+<!-- 	<test name="ffwebbrowser" > 
+        <parameter name="testType" value="desktopBrowser" />
+		<parameter name="browserName" value="ff" />
+		<parameter name="appUrl" value="https://intcon.dma.metlife.com/adm/" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.DMASmokeSimpleLogin" /> 		
+		</classes>
+	</test>  -->
+	
+	
+	
+</suite>

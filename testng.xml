@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <!-- This testng.xml is used to run tests in sequential or in parallel with same environment 
+        execution parameters as set in ProjectConfig class and tests as required -->
+
+	<test thread-count="6" name="FullTestSuite" parallel="classes">
+
+		<groups>
+
+			<!-- This group is for all DMA test scripts -->
+			<define name="DMA_Full_Suite">
+				<include name="DMA_Smoke" />
+				<include name="DMA_Regression" />
+				<include name="DMA_API" />
+			</define>
+
+
+
+			<run>
+
+				<!-- This would run the entire DMA Suite, smoke & regression in project 
+					config Application_URL should be = "https://int.dma.metlife.com/adm"; -->
+				<include name="DMA_Full_Suite"/> 
+
+<!-- 				<include name="database" /> -->
+				<!-- For Running DMA Smoke tests only -->
+
+<!-- 				<include name="DMA_Regression" /> -->
+<!-- 				<include name="DMA_Smoke"/> -->
+<!-- 				<include name="DMA_API" /> -->
+				<!-- <include name="DMA_Smoke" /> -->
+
+
+				<!-- For running CDI BDD scripts , which demonstrate how to use the methods 
+					for reading values from tables, in progress how to call from here without 
+					just excluding everything else, in project config Application_URL should 
+					be = "https://qamig.cdi.metlife.com"; -->
+				<!-- <exclude everything else/> -->
+				<!-- <exclude name="DMA_Full_Suite"/> -->
+				<!-- <exclude name= "Mobile_Browser"/> -->
+				<!-- <exclude name= "Native_Mobile"/> -->
+				<!-- <exclude name= "Encrypt_Text"/> -->
+
+
+				<!-- For mobile web scripts, in project config mobile_app_URL should 
+					be = "https://int.employer.servicing.online.metlife.com"; and application 
+					should be = mobilebrowser -->
+				<!-- <include name= "Mobile_Browser"/> -->
+
+
+				<!-- For Native Mobile apps that execute on mobile devices in the cloud, 
+					in Project Config application should be = mobileapp -->
+				<!-- <include name="Native_Mobile" /> -->
+
+				<!-- For using the encryptText class to encrypt usernames/passwords etc. 
+					No URL necessary, see encryptText class -->
+				<!-- <include name= "Encrypt_Text"/> -->
+
+
+			</run>
+		</groups>
+		
+		
+		<classes>
+			<class name="main.java.com.tests.DMAAPIGetSpecialties" />
+			<class name="main.java.com.tests.DMASmokeSimpleLogin" />
+			<class
+				name="main.java.com.tests.DMARegressionVerifyRequiredCode" />
+<!-- 			<class name="main.java.com.tests.EncryptText" /> -->
+		<!-- 	<class
+				name="main.java.com.tests.USDVBiOSBrowserClaimsPageValidation" /> -->
+				
+			<class name="main.java.com.tests.DatabaseReadExample" />
+			
+<!-- 			<class -->
+<!-- 				name="main.java.com.tests.AmazoniOSAndroidMobileappCreateUserValidation" /> -->
+
+		</classes>
+
+	</test>
+</suite>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests" >
+	  
+	  <test name="Android" >
+        
+        <parameter name="os" value="android" />
+		<parameter name="deviceId" value="444F51334D483098" />
+		<parameter name="bundleId" value="com.amazon.mShop.android.shopping" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.AmazonAndroidMobileappCreateUserValidationParallel" /> 		
+		</classes>
+	</test> 
+	 
+  	<test name="iOS" >
+
+		<parameter name="os" value="ios" />
+		<parameter name="deviceId" value="00008030-0001302A2230802E" />
+		<parameter name="bundleId" value="com.amazon.Amazon" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.AmazoniOSMobileappCreateUserValidationParallel" /> 		
+		</classes>
+	</test>  
+	
+	
+	
+</suite>

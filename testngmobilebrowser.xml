@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests" >
+	
+	<test name="Android" >
+        
+        <parameter name="os" value="android" />
+        <parameter name="deviceId" value="444F51334D483098" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="mobileUrl" value="https://int.employer.servicing.online.metlife.com" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.USDVBiOSBrowserClaimsPageValidationParallel" /> 		
+		</classes>
+	</test>
+	
+	<test  name="iOS" >
+        
+        <parameter name="os" value="ios" />
+        <parameter name="deviceId" value="00008030-0001302A2230802E" /> 
+		<parameter name="browserName" value="safari" />
+		<parameter name="mobileUrl" value="https://int.employer.servicing.online.metlife.com" />
+		
+		<classes>
+			
+			<class
+				name="main.java.com.tests.USDVBiOSBrowserClaimsPageValidationParallel" /> 		
+		</classes>
+	</test>
+	
+	
+</suite>

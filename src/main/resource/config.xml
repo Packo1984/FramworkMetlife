@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Config>
+	   <browser>chrome</browser>
+	  <url>metlife.com</url>
+		<DeviceType>IOS</DeviceType>
+		<AppUrl>https://www.metlife.com</AppUrl>
+		<URLType>Single</URLType>
+		<apk>PRIVATE:applications/USDMobile.ipa</apk>
+		<appAPKpath>\\hybridAppfiles\\USDMobile.ipa</appAPKpath>
+	</Config>
+
+</Root>
